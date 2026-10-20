@@ -4,8 +4,6 @@ Frames the real problem behind an idea, task, complaint or planned change before
 
 AI agents tend to start solving the moment a request arrives, often with a solution already built into the request. This kit makes the agent stop and work out, with you, whether the problem is real, what kind of problem it is, and whether there is a better problem to solve. It covers framing only. Designing the solution is the next stage.
 
-**Status:** version 0.1.0, a first draft. It has been tested on public cases on the AI side only, not yet with real people.
-
 ## What you get
 
 One result file that holds everything the next stage of development needs:
