@@ -1,0 +1,17 @@
+{
+  "name": "problem-framing-kit",
+  "description": "Claude plugin that frames the real problem before any solution work starts.",
+  "owner": {
+    "name": "livlign",
+    "url": "https://github.com/livlign"
+  },
+  "plugins": [
+    {
+      "name": "problem-framing-kit",
+      "source": "./",
+      "description": "Frames the problem behind an idea, task, complaint or change before any solution work starts.",
+      "version": "0.1.0",
+      "license": "MIT"
+    }
+  ]
+}

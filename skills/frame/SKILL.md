@@ -1,6 +1,6 @@
 ---
 name: frame
-description: Frames the real problem behind an idea, task, complaint, feature request or planned change before any solution work starts, and writes one result file for the next stage of development. Use when the person runs /frame or asks to frame a problem. Also invoke it first, before doing any of the requested work, when a request names a costly solution but not the problem it solves, such as "switch our database to Postgres", "rewrite the backend in Rust" or "build us a recommendation engine". The skill then only offers framing and lets the person decline. Never for small, clear requests such as "add a dark mode toggle".
+description: Frames the real problem behind an idea, task, complaint, feature request or planned change before any solution work starts, and writes one result file for the next stage of development. Use when the person runs /problem-framing-kit:frame or asks to frame a problem. Also invoke it first, before doing any of the requested work, when a request names a costly solution but not the problem it solves, such as "switch our database to Postgres", "rewrite the backend in Rust" or "build us a recommendation engine". The skill then only offers framing and lets the person decline. Never for small, clear requests such as "add a dark mode toggle".
 argument-hint: "[the idea, task, complaint or change]"
 ---
 

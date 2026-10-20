@@ -29,13 +29,20 @@ It asks one question at a time, in plain words, and researches before asking. It
 
 ## Install
 
-**Claude Code, for one session:**
+**Claude Code (2.1.275 or later):**
+
+```text
+/plugin install problem-framing-kit --marketplace livlign/problem-framing-kit
+```
+
+**Claude Code, for one session, from a local copy:**
 
 ```bash
+git clone https://github.com/livlign/problem-framing-kit.git
 claude --plugin-dir ./problem-framing-kit
 ```
 
-**claude.ai or the Claude desktop app:** zip the `problem-framing-kit` folder, then go to Customize, Plugins, and upload it. In chat, the research helper agent doesn't load, so research runs in the main conversation.
+**claude.ai or the Claude desktop app:** download the repository as a zip (Code, Download ZIP), then go to Customize, Plugins, and upload it. In chat, the research helper agent doesn't load, so research runs in the main conversation.
 
 ## Use
 
@@ -54,3 +61,8 @@ Claude may also offer framing on its own when a request names a costly solution 
 | `skills/frame/references/statement-checklist.md` | Traps a problem statement must avoid |
 | `skills/frame/references/result-template.md` | The layout of the result file |
 | `agents/framing-researcher.md` | Research helper for facts and prior art (Claude Code and Cowork) |
+| `.claude-plugin/` | Plugin and marketplace manifests |
+
+## License
+
+[MIT](LICENSE)
