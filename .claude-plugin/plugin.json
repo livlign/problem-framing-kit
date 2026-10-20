@@ -1,0 +1,6 @@
+{
+  "name": "problem-framing-kit",
+  "description": "Frames the problem behind an idea, task, complaint or change before any solution work starts. Produces one result file with a summary for people, details for the next AI agent, and a log of every decision.",
+  "version": "0.1.0",
+  "keywords": ["problem framing", "discovery", "requirements", "planning"]
+}
