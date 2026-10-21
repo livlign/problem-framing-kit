@@ -1,15 +1,15 @@
 # Problem statement checklist
 
-Check the statement from step 5 against every item. Fix what fails before showing it to the person.
+Check the statement from step 5, the Now and goal, and the success measure against every item. Fix what fails before showing it to the person.
 
 Items 1 to 10 are adapted from the MITRE Innovation Toolkit's Problem Framing Canvas. Items 11 to 14 come from the kit's own rules.
 
 A good statement does **not**:
 
 1. **Name a cause** that hasn't been confirmed. "The server is slow because of the database" assumes the answer.
-2. **Contain a solution.** "We need a dashboard" is a solution. Describe the gap the dashboard would close.
+2. **Contain a solution.** "We need a dashboard" is a solution. Describe the gap the dashboard would close. Check the goal and the success measure too: a solution often hides there, or in a working name. "Solved when the Launch Date field is live" picks the name; "solved when the field is live under an agreed name" doesn't.
 3. **Rest on belief instead of facts.** Every claim should trace back to evidence in the result file, or be marked as an assumption.
-4. **Run long.** Aim for three or four sentences.
+4. **Run long.** Aim for three or four short sentences, about 80 words at most, with one or two key numbers. Other numbers belong in Evidence.
 5. **Leave out the current state.** Say what happens today.
 6. **Leave out the desired state.** Say what should be true instead.
 7. **Leave success unmeasurable.** Say how anyone would know the problem is solved, even roughly.

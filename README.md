@@ -1,29 +1,30 @@
 # problem-framing-kit
 
-Frames the real problem behind an idea, task, complaint or planned change before any solution work starts.
+Frames the real problem behind an idea, task, complaint or planned change before any solution work starts, then suggests a few solution directions to start from.
 
-AI agents tend to start solving the moment a request arrives, often with a solution already built into the request. This kit makes the agent stop and work out, with you, whether the problem is real, what kind of problem it is, and whether there is a better problem to solve. It covers framing only. Designing the solution is the next stage.
+AI agents tend to start solving the moment a request arrives, often with a solution already built into the request. This kit makes the agent stop and work out, with you, whether the problem is real, what kind of problem it is, and whether there is a better problem to solve. Once the problem is framed, it suggests several very different solution directions so the work isn't blocked. Choosing one and designing it is the next stage.
 
 ## What you get
 
 One result file that holds everything the next stage of development needs:
 
 - **Status and summary** at the top, for people.
-- **Details** for the AI agent that designs the solution: the problem statement, why it matters, current and desired state, scope, people, limits, evidence, prior art, frames set aside, the test with people, and open questions.
+- **Details** for the AI agent that designs the solution: the problem statement, why it matters, current and desired state, scope, people, limits, evidence, prior art, frames set aside, the test with people, open questions and what each one blocks, and solution directions.
 - **A decision log:** every decision, who made it, and why, written the moment it was made.
 
-In Claude, the file is an artifact you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word.
+In Claude, the file is an artifact you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word. Either way it is split into tabs, pages or sections from the start, and written to be skimmed: short lines, one item per row, raw material kept apart.
 
 ## How it works
 
-1. **Recognize the frame:** the kind of problem, anything built in, mixed problems split apart, and how deep to go.
-2. **Gather facts:** research first, including prior art, then questions about your real case.
+1. **Recognize the frame:** the kind of problem, anything built in, mixed problems split apart, and how deep to go. It tells you how it reads your input and what it will research and why.
+2. **Gather facts:** your team's own tickets, docs and decisions first, then research including prior art, then questions about your real case.
 3. **Validate** with questions suited to the kind of problem. It ends one of five ways: real as stated, not real or already solved, a different problem, can't tell yet, or the need is unclear.
 4. **Look around:** who has it, who doesn't, and why.
 5. **State the problem** in plain words, with its limits.
-6. **Test with people:** the kit prepares the questions; you ask them.
+6. **Test with people:** the kit prepares the questions; you ask them. For your team's own problems, that means the team and the people who decide, not customers.
+7. **Suggest solution directions:** several very different ones in a table, with trade-offs, so the next stage has somewhere to start.
 
-It asks one question at a time, in plain words, and researches before asking. It decides alone only when it is confident and a mistake is cheap, and it logs why.
+It asks one question at a time, in plain words, and researches before asking. When you don't know something or don't want to go into it, it records that and stops asking in that direction. It decides alone only when it is confident and a mistake is cheap, and it logs why.
 
 ## Install
 
