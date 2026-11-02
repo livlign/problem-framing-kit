@@ -35,10 +35,11 @@ Read in order: Overview, then Problem, then Solutions. References hold the facts
 
 ## Status
 
-| Part | Status |
-| --- | --- |
-| Problem | <draft / confirmed by <framer> / reviewed by <names>: what they said> |
-| Solutions | <not started / N directions proposed, none chosen / <direction> chosen by <name>> |
+- **Problem:** <draft, or reviewed>
+  - <who confirmed it, one per line>
+  - <who has not reviewed it yet, or what reviewers said>
+- **Solutions:** <not started, or N directions proposed>
+  - <none chosen, or what was chosen and by whom>
 
 ## Progress
 
@@ -57,7 +58,9 @@ Read in order: Overview, then Problem, then Solutions. References hold the facts
 
 # Problem
 
-<Status line: draft, confirmed by whom, reviewed by whom. Then: "Is this the right problem? Say what is wrong or missing.">
+- **Status:** <draft, or reviewed>
+  - <who confirmed it, who has not reviewed it yet: one per line>
+- **Your part:** is this the right problem? Say what is wrong or missing.
 
 ## The problem
 
