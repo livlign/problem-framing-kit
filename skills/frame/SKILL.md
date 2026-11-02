@@ -80,6 +80,7 @@ The person skims. Write so they never have to read through.
 - When something is skipped or replaced, shrink it to one line that says so, with a link to the old content if it is worth keeping.
 - Tables have at most four columns and a few words per cell. Anything longer goes under a heading below the table.
 - One item per row, line or heading. Never put several options, names or candidates in one cell, line or paragraph.
+- Anything that is a list goes in as a list: bullets, numbered steps or nested sub-bullets, one item each. Never run items together in a paragraph or a single bullet, such as "A: …. B: …. C: …." or a string of dated changes. When a bullet introduces items, end it with a colon and nest the items under it.
 - Before you save a section, cut every line that wouldn't change a decision.
 
 ## The session

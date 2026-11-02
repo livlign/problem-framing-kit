@@ -42,7 +42,12 @@ Write any list of things to compare as a table, never as a paragraph.
 
 - **Original input:** "<the person's words, exactly>"
 - **Built in at the start:** <chosen solution, assumed cause, whose view>
-- **How the frame changed:** <from what to what, and why>
+- **How the frame changed:** <from what, to what the frame is now>:
+  - <each part of the current frame, one per sub-bullet>
+
+| Date | Change | Why |
+| --- | --- | --- |
+| <YYYY-MM-DD> | <one change per row> | <short reason> |
 
 ## The problem
 
