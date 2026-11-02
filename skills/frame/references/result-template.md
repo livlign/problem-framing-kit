@@ -2,17 +2,17 @@
 
 Create the result file with every heading below at the start of the session. Fill each section as its step finishes. Follow the writing rules in SKILL.md: short, skimmable, one item per line. Leave a section's placeholder line in place until there is something real to put there; never invent content to fill it.
 
-Everyone involved reads the file, in this order: Overview, Problem, Solutions. Those are the three main tabs, written in plain everyday language for people. Everything else sits under one References group and is opened only when someone wants the facts behind a claim.
+Everyone involved reads the file, in this order: Overview, Problem, Solutions, Open questions & test. Those are the four main tabs, written in plain everyday language for people. Everything else sits under one References group and is opened only when someone wants the facts behind a claim.
 
 | Tab | Where | Holds |
 | --- | --- | --- |
 | Overview | Main | What this is, Status, Progress, Next, In short |
 | Problem | Main | Status line, The problem, Why it matters, Goal, In scope, Out of scope, People, Must respect |
 | Solutions | Main | Suggested start, one table per choice, a short block per direction |
+| Open questions & test | Main | Questions numbered Q1, Q2… with who answers, first; then the test with people; Not explored |
 | References | Group | An index of the tabs below and what each holds |
 | Evidence | Under References | Facts, grouped and numbered E1, E2… |
 | Prior art | Under References | Other tools and products, grouped and numbered P1, P2… |
-| Open questions & test | Under References | Questions numbered Q1, Q2… with who answers; the test with people; Not explored |
 | Decision log | Under References | Decisions people care about |
 | Notes for AI | Under References | Framing status, original input, labels, history, exact definitions, technical limits, frames set aside |
 
@@ -31,7 +31,7 @@ Write any list of things to compare as a table, never as a paragraph.
 
 <One or two plain sentences: what this is about.>
 
-Read in order: Overview, then Problem, then Solutions. References hold the facts behind them.
+Read in order: Overview, then Problem, then Solutions, then Open questions & test. References hold the facts behind them.
 
 ## Status
 
@@ -122,6 +122,31 @@ Read in order: Overview, then Problem, then Solutions. References hold the facts
 
 <One block per direction, in the same order as the table. One section per choice.>
 
+# Open questions & test
+
+<One line: what still needs answering, and by whom.>
+
+## Open questions
+
+| Question | Who answers | Blocks |
+| --- | --- | --- |
+| Q1. <…> | <name or role> | <the decision or direction that depends on it> |
+
+## Test with people
+
+- **Status:** <not started, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the section.>
+- **Who to ask:**
+  - <one person or group per bullet>
+- **Questions:**
+  1. <a few short questions that don't mention any solution>
+- **What they said:** <…>
+
+## Not explored
+
+<Topics the person chose not to go into, with their reason. Not asked about again in this session.>
+
+- <…>
+
 # References
 
 <One line: open these only for the facts behind a claim. A table: tab, what it holds, how it is cited.>
@@ -145,29 +170,6 @@ Read in order: Overview, then Problem, then Solutions. References hold the facts
 ## P1. <group title>
 
 <Who else faced this and what already exists, with sources. Evidence only, not a chosen solution.>
-
-# Open questions & test
-
-## Test with people
-
-- **Status:** <not started, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the section.>
-- **Who to ask:**
-  - <one person or group per bullet>
-- **Questions:**
-  1. <a few short questions that don't mention any solution>
-- **What they said:** <…>
-
-## Open questions
-
-| Question | Who answers | Blocks |
-| --- | --- | --- |
-| Q1. <…> | <name or role> | <the decision or direction that depends on it> |
-
-## Not explored
-
-<Topics the person chose not to go into, with their reason. Not asked about again in this session.>
-
-- <…>
 
 # Decision log
 
