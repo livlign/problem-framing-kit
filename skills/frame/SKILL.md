@@ -62,13 +62,15 @@ Everything lives in one result file. It is the record of the session and the onl
 - **When:** create it at the start, with all headings from [the template](references/result-template.md), before any research. Fill each section as its step finishes, so the person can watch it grow.
 - **Layout:** from the start, without being asked, use whatever the platform offers to split and tidy the file: tabs in Claude Docs or any artifact that has them, pages or toggles in Notion or Confluence, headings with a table of contents in Word or Google Docs, one file per tab in a folder for Markdown. Never one long page. [The template](references/result-template.md) lists the tabs.
 - **Writing:** follow [Writing the file](#writing-the-file) for every section.
-- **Status:** keep the Status section current: step, kind of problem, depth, and what you are waiting for. Status is done only when nothing is waiting. While anything is, such as an unconfirmed statement or a review, Status names the step that is still open.
+- **Status:** keep two places current. "Where we are" in the Overview says it for people, in plain words. Framing status in Notes for AI holds the step, kind of problem, depth, and what you are waiting for. Status is done only when nothing is waiting. While anything is, such as an unconfirmed statement or a review, Status names the step that is still open.
 - **Decisions:** log every decision the moment it is made, with the date, what was decided, who decided (the person or the AI), and why. Add new rows at the bottom, so the log reads in order. Never reconstruct the log at the end.
 - **Resuming:** if a result file for this input already exists, read it first, including any edits the person made, and continue from its Status. The person's edits win.
 
 ### Writing the file
 
 The person skims. Write so they never have to read through.
+
+- The tabs people review (Overview, Problem, Open questions & test, Solution directions) are for humans. Write them the way you would explain it to a colleague: plain words, short sentences, no framing terms (step, kind, depth, frame), no part labels (A, B, C), no table names or IDs, no sources in brackets. Anything technical, exact or long goes in the Notes for AI tab, and the people tabs point there only if needed.
 
 - Start each tab with its point in one line. Details come after.
 - Bullets, one fact per line, about twenty words at most. Only the problem statement is in full sentences.
@@ -87,7 +89,7 @@ The person skims. Write so they never have to read through.
 
 ### 0. Open or resume
 
-Create or read the result file as above. Write the person's original input, word for word, into the Overview.
+Create or read the result file as above. Write the person's original input, word for word, into Original input in the Notes for AI tab.
 
 ### 1. Recognize the frame
 
@@ -177,7 +179,7 @@ So the next stage isn't blocked, end with a few directions to start from. They a
 ### Hand over
 
 - Bring the Summary up to date: at most five bullets a person can read in thirty seconds.
-- Make sure the details are complete enough for an AI agent to design the solution without this conversation.
+- Make sure the details are complete enough for an AI agent to design the solution without this conversation. Those details live in Notes for AI, Evidence and Prior art.
 - Set Status to done, unless something is still waiting. Then name it in Status.
 - Tell the person in one or two sentences that framing is complete and where the file is. Do not start designing the solution.
 

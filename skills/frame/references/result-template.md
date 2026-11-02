@@ -2,19 +2,25 @@
 
 Create the result file with every heading below at the start of the session. Fill each section as its step finishes. Follow the writing rules in SKILL.md: short, skimmable, one item per line. Leave a section's placeholder line in place until there is something real to put there; never invent content to fill it.
 
-The file has two layers. People read the Status and Summary at the top. The Details are for the AI agent that designs the solution next, so they must make sense without this conversation.
+The file serves two readers.
+
+- **People** read the Overview, Problem, Open questions & test and Solution directions tabs, and review them. Write these in plain everyday language, short, as a person would say it to a colleague. No framing terms (step numbers, "kind", "depth", "frame"), no part labels such as A, B, C, no table names or IDs, no sources in brackets.
+- **The AI agent** that designs the solution next reads the Notes for AI tab. Put the method's terms, labels, exact definitions, technical limits, history and anything long-winded there. It must make sense without this conversation.
+
+Evidence, Prior art and the Decision log serve both: a plain one-line takeaway at the top of each group, details and sources below.
 
 Split the file into these tabs from the start, using what the platform offers: real tabs where they exist, otherwise pages, toggles, headings with a table of contents, or one file per tab.
 
-| Tab | Sections |
-| --- | --- |
-| Overview | Status, Summary, Overview |
-| Problem | The problem, Why it matters, Now and goal, Scope, People, Limits, Frames set aside |
-| Evidence | Evidence, with raw material at the bottom |
-| Prior art | Prior art |
-| Open questions & test | Test with people, Open questions, Not explored |
-| Solution directions | Solution directions |
-| Decision log | Decision log |
+| Tab | Read by | Sections |
+| --- | --- | --- |
+| Overview | People | Where we are, Summary |
+| Problem | People | The problem, Why it matters, Goal, In scope, Out of scope, People, Must respect |
+| Evidence | Both | Evidence, with raw material at the bottom |
+| Prior art | Both | Prior art |
+| Open questions & test | People | Test with people, Open questions, Not explored |
+| Solution directions | People | Solution directions |
+| Decision log | Both | Decision log |
+| Notes for AI | AI | Framing status, Original input, Parts and labels, How the frame changed, Exact definitions, Technical limits, Frames set aside |
 
 If the problem is split in two, give each problem its own Problem and Solution directions tabs.
 
@@ -25,62 +31,49 @@ Write any list of things to compare as a table, never as a paragraph.
 ```markdown
 # Framing: <a short name for the problem>
 
-## Status
+## Where we are
 
-- **Step:** <0 to 7, or done>
-- **Kind of problem:** <one of the ten kinds; note if it changed>
-- **Depth:** <light, standard or deep>
-- **Waiting for:** <missing facts, a test with people, a review, or nothing. Step is done only when this is nothing.>
+- <the state of the problem statement, in a few words>
+- Decides: <name>
+- Next: <the next thing that happens, in plain words>
 
 ## Summary
 
-<For people. At most five bullets, readable in thirty seconds: the problem, why it matters, where things stand, what is still open, the next step. Updated whenever the frame changes. Empty until step 5.>
-
-# Details
-
-## Overview
-
-- **Original input:** "<the person's words, exactly>"
-- **Built in at the start:** <chosen solution, assumed cause, whose view>
-- **How the frame changed:** <from what, to what the frame is now>:
-  - <each part of the current frame, one per sub-bullet>
-
-| Date | Change | Why |
-| --- | --- | --- |
-| <YYYY-MM-DD> | <one change per row> | <short reason> |
+<For people. At most five bullets, readable in thirty seconds: the problem, why it matters, a key fact, what is still open. Nest any list under its bullet. Updated whenever the frame changes. Empty until step 5.>
 
 ## The problem
 
-<The statement from step 5, in full sentences.>
+<The statement from step 5. A short paragraph; if it names several missing things, list them as bullets.>
 
 ## Why it matters
 
-<Who is affected, and what it costs to leave it unsolved. With sources.>
+- <what it costs to leave it unsolved, one point per bullet>
 
-## Now and goal
+## Goal
 
-- **Now:** <what happens today>
-- **Goal:** <what should be true instead>
-- **How success could be measured:** <rough is fine>
+- <what should be true instead>
+- Measure: <rough is fine; today's number and the target>
 
-## Scope
+## In scope
 
-- **In:** <…>
-- **Out:** <…>
+- <one item per bullet>
+
+## Out of scope
+
+- <one item per bullet>
 
 ## People
 
-- **Affected:** <…>
-- **Decides:** <who makes the final call; if no one can, say so: that is a finding>
-- **Loses:** <…>
+- Decides: <who makes the final call; if no one can, say so: that is a finding>
+- <who uses it, who is affected, who loses: one group per bullet>
 
-## Limits any solution must respect
+## Must respect
 
-<Deadlines, acceptable downtime, rules, budgets. Not how to meet them.>
+- <deadlines, acceptable downtime, rules, budgets: one per bullet. Not how to meet them.>
 
 ## Evidence
 
-Facts, with sources:
+<takeaway in one plain line>
 
 - <fact> (<source>)
 
@@ -92,15 +85,13 @@ Assumptions not yet checked:
 
 <Who else faced this and what already exists, with sources. Evidence only, not a chosen solution.>
 
-## Frames set aside
-
-1. **"<another way of seeing the problem>"** <Who set it aside and why.>
-
 ## Test with people
 
 - **Status:** <not started, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the section.>
-- **Who to ask:** <…>
-- **Questions:** <a few short questions that don't mention any solution>
+- **Who to ask:**
+  - <one person or group per bullet>
+- **Questions:**
+  1. <a few short questions that don't mention any solution>
 - **What they said:** <…>
 
 ## Open questions
@@ -141,4 +132,46 @@ Assumptions not yet checked:
 | Date | Decision | Who | Why |
 | --- | --- | --- | --- |
 | <YYYY-MM-DD> | <what was decided> | <person or AI> | <reason> |
+
+# Notes for AI
+
+<Detail for the agent that designs the solution. People can skip this tab.>
+
+## Framing status
+
+- **Step:** <0 to 7, or done>
+- **Kind of problem:** <one of the ten kinds; note if it changed>
+- **Depth:** <light, standard or deep, and why>
+- **Waiting for:** <missing facts, a test with people, a review, or nothing. Step is done only when this is nothing.>
+
+## Original input
+
+- **Input:** "<the person's words, exactly>"
+- **Built in at the start:** <chosen solution, assumed cause, whose view>
+
+## Parts and labels
+
+| Label | Part | Status |
+| --- | --- | --- |
+| <A> | <part of the problem> | <in, out, separate> |
+
+## How the frame changed
+
+<from what, to what the frame is now>
+
+| Date | Change | Why |
+| --- | --- | --- |
+| <YYYY-MM-DD> | <one change per row> | <short reason> |
+
+## Exact definitions
+
+- <the success measure and any term stated precisely: entity names, IDs, formulas>
+
+## Technical limits
+
+- <owners, systems, volumes, data shapes: one per bullet, with sources>
+
+## Frames set aside
+
+1. **"<another way of seeing the problem>"** <Who set it aside and why.>
 ```
