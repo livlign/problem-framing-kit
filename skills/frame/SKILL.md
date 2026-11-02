@@ -27,7 +27,7 @@ If you started this skill on your own because a request looked costly or unclear
 - Do not propose a problem statement, summary or conclusion while things are still vague. Gather first, judge later.
 - Keep messages short. Findings go into the result file, not the chat.
 - Context the person mentions once, such as a deal, a customer or a deadline, goes into the result file. Don't build questions on it unless the person says it matters.
-- If the person answers something else or moves on, drop the question. Never ask the same question again.
+- If the person answers something else or moves on, drop the question. Never ask the same question again, not even as the closing line of a later message. An unanswered question goes to Open questions or stays in the file as an open step; carry on with the next step.
 - If the person keeps agreeing without changing anything, stop proposing. Test against a real case or real evidence instead.
 - Do not teach the method. Just frame the problem with them.
 
@@ -61,8 +61,11 @@ Everything lives in one result file. It is the record of the session and the onl
 - **Where:** if you can create artifacts or documents in this environment, create one. Otherwise ask the person once which format they want, such as a Markdown or Word file, and where to save it.
 - **When:** create it at the start, with all headings from [the template](references/result-template.md), before any research. Fill each section as its step finishes, so the person can watch it grow.
 - **Layout:** from the start, without being asked, use whatever the platform offers to split and tidy the file: tabs in Claude Docs or any artifact that has them, pages or toggles in Notion or Confluence, headings with a table of contents in Word or Google Docs, one file per tab in a folder for Markdown. Never one long page. [The template](references/result-template.md) lists the tabs.
+- **Reading path:** everyone involved reads the file, in this order: Overview (what this is, status, progress, next step), Problem (to check it is right), Solutions. Those three are the main tabs. Everything else (Evidence, Prior art, Open questions & test, Decision log, Notes for AI) sits under one References group, out of the way: sub-tabs under a References tab in Claude Docs, toggles in Notion or Confluence, an appendix in Word or Google Docs, a references folder for Markdown. People open a reference only when they want the facts behind a claim.
+- **Citations:** give each group of facts in Evidence an ID (E1, E2…), each group in Prior art an ID (P1, P2…), and each open question an ID (Q1, Q2…). Each section of a main tab that rests on facts ends with one short line, such as "Backed by E1, E5 in Evidence", linking to the tab when the platform allows. Every claim in a main tab can be traced this way.
 - **Writing:** follow [Writing the file](#writing-the-file) for every section.
-- **Status:** keep two places current. "Where we are" in the Overview says it for people, in plain words. Framing status in Notes for AI holds the step, kind of problem, depth, and what you are waiting for. Status is done only when nothing is waiting. While anything is, such as an unconfirmed statement or a review, Status names the step that is still open.
+- **Status:** keep two places current. The Overview says it for people: a Status table (the problem, the solutions), a Progress checklist, and Next, where each ask names who it is for. Framing status in Notes for AI holds the step, kind of problem, depth, and what you are waiting for. Status is done only when nothing is waiting. While anything is, such as an unconfirmed statement or a review, Status names the step that is still open.
+- **Honest status:** never write "agreed", "confirmed" or "accepted" without saying who. The problem moves through: draft, confirmed by the framer (the person you are working with), reviewed by the people involved (names, and what they said). The framer agreeing is not the team agreeing. Solutions stay "proposed" until someone picks one; your suggestion stays labelled as the AI's view.
 - **Decisions:** log every decision the moment it is made, with the date, what was decided, who decided (the person or the AI), and why. Add new rows at the bottom, so the log reads in order. Never reconstruct the log at the end.
 - **Resuming:** if a result file for this input already exists, read it first, including any edits the person made, and continue from its Status. The person's edits win.
 
@@ -70,7 +73,8 @@ Everything lives in one result file. It is the record of the session and the onl
 
 The person skims. Write so they never have to read through.
 
-- The tabs people review (Overview, Problem, Open questions & test, Solution directions) are for humans. Write them the way you would explain it to a colleague: plain words, short sentences, no framing terms (step, kind, depth, frame), no part labels (A, B, C), no table names or IDs, no sources in brackets. Anything technical, exact or long goes in the Notes for AI tab, and the people tabs point there only if needed.
+- The main tabs (Overview, Problem, Solutions) are for humans. Write them the way you would explain it to a colleague: plain words, short sentences, no framing terms (step, kind, depth, frame), no part labels (A, B, C), no table names or database IDs. Sources appear only as the short "Backed by" line at the end of a section. Anything technical, exact or long goes in Notes for AI or another reference tab.
+- The Overview and the Problem tab never say the same thing twice. The Overview gives the short version in a few bullets ("In short"); the Problem tab holds the full one.
 
 - Start each tab with its point in one line. Details come after.
 - Bullets, one fact per line, about twenty words at most. Only the problem statement is in full sentences.
@@ -78,7 +82,8 @@ The person skims. Write so they never have to read through.
 - Leave out what no one will act on: how you found something, hedging, background everyone involved knows.
 - Raw material, such as pasted notes, query results or long lists, goes at the bottom of the Evidence tab or is linked. Never in the other tabs.
 - In Evidence, start each group of facts with a one-line takeaway. Put the source short, at the end of the line.
-- Who confirmed what, and when, goes only in Status and the decision log, never as notes inside a section.
+- Who confirmed what, and when, goes only in status lines (the Overview, the top of the Problem tab) and the decision log, never as notes inside a section.
+- The decision log keeps decisions people care about. Decisions about how the framing itself ran, such as the depth or the file format, go in Notes for AI.
 - When something is skipped or replaced, shrink it to one line that says so, with a link to the old content if it is worth keeping.
 - Tables have at most four columns and a few words per cell. Anything longer goes under a heading below the table.
 - One item per row, line or heading. Never put several options, names or candidates in one cell, line or paragraph.
@@ -136,7 +141,7 @@ At deep depth, run a cheap test with people here, before step 4. See step 6.
 - Who else has this problem, and how do they handle it?
 - Who doesn't have it, and why not? When didn't it happen? These exceptions often show hidden causes.
 - "Did something we did or decided make this happen, or make it worse?" Skip this one when it would read as blame and adds nothing.
-- Who makes the final call? Name the person or group. If no one can, record that as a finding in The problem and the Summary, not as a list of everyone involved: a question no one can close tends to reopen.
+- Who makes the final call? Ask only if the person hasn't said and a choice is actually pending, ask it once, and accept "the team" or "not sure" as answers. Name the decider once, under People in the Problem tab, and nowhere else. Framing is a team activity: the problem is solid when the people involved recognise it, not when one person signs it off. One exception: if nobody at all can make the call, record that as a finding, because such a question tends to reopen.
 
 ### 5. State the problem
 
@@ -160,7 +165,7 @@ You usually can't reach the people affected, so prepare the test and hand it to 
 - Write a few short questions to ask. Don't mention any solution, so the answers stay about the problem.
 - Say who to ask and roughly how many.
 - Existing evidence, such as votes, duplicate reports or support tickets, can count as a test when it fits.
-- If the person decides to skip the test, log that decision and note in the summary that the problem is not yet confirmed by the people who have it.
+- If the person decides to skip the test, log that decision and say in the Overview status that the problem is not yet reviewed by the people who have it.
 
 When they report back, record the results and adjust the statement if needed.
 
@@ -173,12 +178,12 @@ So the next stage isn't blocked, end with a few directions to start from. They a
 - Lay them out as in [the template](references/result-template.md): first a short table, one row per direction, with a few words per cell, so the person can compare them at a glance. Then one short block per direction: what it is, what's good, what's bad (including limits it breaks), and which open questions must be answered first. A line or two each.
 - One direction per row and per block. A combination of directions gets its own row. If the directions fall into separate choices, such as which name and what to do with existing data, give each choice its own table.
 - If the problem was split, give each problem its own directions.
-- You may say which you would start with and why, marked as the AI's view. The choice is the person's. Log the directions and any choice the person makes.
+- You may say which you would start with and why, marked as the AI's view. Put it first in the Solutions tab, as "Suggested start (AI's view, not chosen)", with what to check before taking it; the tables of options follow. The choice is the person's. Log the directions and any choice the person makes.
 - Use existing facts to check a direction, such as whether a name is already taken, when the check is cheap and read-only. Don't build, prototype or write a plan.
 
 ### Hand over
 
-- Bring the Summary up to date: at most five bullets a person can read in thirty seconds.
+- Bring the Overview up to date: Status, Progress, Next (each ask with a name), and "In short" in at most three bullets.
 - Make sure the details are complete enough for an AI agent to design the solution without this conversation. Those details live in Notes for AI, Evidence and Prior art.
 - Set Status to done, unless something is still waiting. Then name it in Status.
 - Tell the person in one or two sentences that framing is complete and where the file is. Do not start designing the solution.
