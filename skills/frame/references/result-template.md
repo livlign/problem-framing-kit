@@ -128,9 +128,13 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 
 ## Open questions
 
-| Question | Who answers | Blocks | Answer |
-| --- | --- | --- | --- |
-| Q1. <…> | <name or role> | <the decision or direction that depends on it> | <left empty for the person to fill in> |
+### Q1. <the question, in plain words>
+
+- Who answers: <name or role>
+- It decides: <the decision or direction that depends on it>
+- Answer:
+
+<One block per question, not a table: answers need room.>
 
 ## Test with people
 
