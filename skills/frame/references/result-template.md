@@ -128,18 +128,18 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 
 ## Open questions
 
-| Question | Who answers | Blocks |
-| --- | --- | --- |
-| Q1. <…> | <name or role> | <the decision or direction that depends on it> |
+| Question | Who answers | Blocks | Answer |
+| --- | --- | --- | --- |
+| Q1. <…> | <name or role> | <the decision or direction that depends on it> | <left empty for the person to fill in> |
 
 ## Test with people
 
 - **Status:** <not started, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the section.>
 - **Who to ask:**
-  - <one person or group per bullet>
-- **Questions:**
+  - <one person or group per bullet, described so anyone knows who is meant; "name not known yet" if so>
+- **Questions** (write your name and answer under each one):
   1. <a few short questions that don't mention any solution>
-- **What they said:** <…>
+      - Answers:
 
 ## Not explored
 
