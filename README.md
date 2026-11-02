@@ -6,13 +6,20 @@ AI agents tend to start solving the moment a request arrives, often with a solut
 
 ## What you get
 
-One result file that holds everything the next stage of development needs:
+One result file that everyone involved reads, and that holds everything the next stage of development needs. Four main tabs, in reading order, written in plain language for people:
 
-- **Status and summary** at the top, for people.
-- **Details** for the AI agent that designs the solution: the problem statement, why it matters, current and desired state, scope, people, limits, evidence, prior art, frames set aside, the test with people, open questions and what each one blocks, and solution directions.
-- **A decision log:** every decision, who made it, and why, written the moment it was made.
+1. **Overview:** what this is about, status, progress, and the next step with a name on each ask.
+2. **Problem:** the problem statement, why it matters, the goal, scope, people and limits. Readers check it is right.
+3. **Solutions:** a suggested start, then several very different directions with trade-offs. None is chosen for you.
+4. **Open questions & test:** what still needs answering and by whom, with space to write the answers in the doc.
 
-In Claude, the file is an artifact you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word. Either way it is split into tabs, pages or sections from the start, and written to be skimmed: short lines, one item per row, raw material kept apart.
+Everything else sits under one **References** group, opened only when someone wants the facts behind a claim:
+
+- **Evidence** and **Prior art**, numbered (E1, P1…) so the main tabs can cite them.
+- **Decision log:** every decision, who made it, and why, written the moment it was made.
+- **Notes for AI:** the exact detail the AI agent that designs the solution needs.
+
+In Claude, the file is a doc you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word, and uses toggles, an appendix or a references folder for the References group. Status is honest: it says who agreed, never just "agreed".
 
 ## How it works
 
