@@ -74,6 +74,7 @@ Everything lives in one result file. It is the record of the session and the onl
 The person skims. Write so they never have to read through.
 
 - The main tabs (Overview, Problem, Solutions) are for humans. Write them the way you would explain it to a colleague: plain words, short sentences, no framing terms (step, kind, depth, frame), no part labels (A, B, C), no table names or database IDs. Sources appear only as the short "Backed by" line at the end of a section. Anything technical, exact or long goes in Notes for AI or another reference tab.
+- Link to another tab only where jumping there helps: the "Backed by" lines and the asks under Next. In running text, name tabs as plain words. Many platforms show links as chips, which break up a sentence.
 - The Overview and the Problem tab never say the same thing twice. The Overview gives the short version in a few bullets ("In short"); the Problem tab holds the full one.
 
 - Start each tab with its point in one line. Details come after.
