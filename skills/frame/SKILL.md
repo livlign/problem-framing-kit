@@ -67,6 +67,13 @@ Everything lives in one result file. It is the record of the session and the onl
   - Tabs AI reads: Evidence, Prior art, Notes for AI. Precise writing. Keep exact identifiers from outside the doc, such as table names, backlog codes and field IDs, with a source and date on each fact.
 - **No codes anywhere:** the doc makes up no codes of its own. No numbered IDs for facts, questions or solutions (such as E6, Q5, D1 or P2), no method terms with numbers ("kind 2", "step 7"), no part labels ("part A"). Every reference reads on its own: name the thing in words, such as the Evidence heading by name, or the question written out.
 - **One source of facts:** each fact is written the same way in every tab, with the words and numbers from the Evidence tab. Before writing any tab, reread Evidence. Don't copy from memory or from another tab.
+- **Every claim has a source:** each fact, decision, date, number and quote in the doc points to where it came from, in Evidence, Prior art or the decision log. A source someone else can open and check, such as:
+  - a query on named data, with the date it ran
+  - a doc, ticket or page, linked or named
+  - a meeting: its name, date and time, who said it, and who was there (or who was invited, if attendance isn't recorded)
+  - a person in this session: their name and the date
+  - Not sources: your own memory or notes from earlier sessions, a summary of a summary, or "the team" with no names. Never turn one of these into a dated fact or decision.
+  - With no source, don't state it as fact. Put it under "Assumptions not yet checked", mark it "to confirm" where people read it, and list it as open under "Where each Problem fact comes from". If it can't be checked and nothing depends on it, leave it out.
 - **Name the exact unit:** a fact names the exact unit it is about, such as the studio ("Walmart Jandy", not "Walmart").
 - **Say it the way a person would:** no compressed analyst phrases ("share of products linked to a contactable vendor", "name-only fields split one vendor into many"). Write numbers as a person says them ("about 92% of the products"), and give a concrete example for any risk that isn't obvious ("Gilli, Inc." and "Gilli Inc" become two vendors). If a reader would have to guess what a line means, rewrite it.
 - **Show the data:** a claim about data values (codes, IDs, duplicates, odd values) shows a few real rows from the data, as a small table in Evidence. A question gives one real example in its own words; if it would need a full table of examples, the table goes in Evidence. Never invent example values; if you can't query the data, say the example is missing.

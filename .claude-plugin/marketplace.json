@@ -10,7 +10,7 @@
       "name": "problem-framing-kit",
       "source": "./",
       "description": "Frames the problem behind an idea, task, complaint or change before any solution work starts, then suggests a few solution directions.",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "license": "MIT"
     }
   ]

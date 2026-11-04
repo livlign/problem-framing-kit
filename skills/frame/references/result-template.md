@@ -162,10 +162,11 @@ Facts: Evidence tab, "<heading name>".
 <The finding, in one sentence.>
 
 - <fact: what it counts, in which studio or unit, and when> (<source>, <date>)
+- <from a meeting: who said what> (<meeting name>, <date and time>, attended or invited: <names>)
 
 ## Assumptions not yet checked
 
-- <assumption. When it gets answered, move it into a group above as a fact.>
+- <a claim with no source someone can check, such as an inference or your own reading. Mark it "to confirm" wherever people read it. When it gets answered, move it into a group above as a fact, with its source.>
 
 # Prior art
 
