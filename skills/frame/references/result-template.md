@@ -1,24 +1,24 @@
 # Result file template
 
-Create the result file with every heading below at the start of the session. Fill each section as its step finishes. Follow the writing rules in SKILL.md: short, skimmable, one item per line. Leave a section's placeholder line in place until there is something real to put there; never invent content to fill it.
+Create the result file with every heading below at the start of the session. Fill each section as its step finishes. Follow the writing rules in SKILL.md: short, skimmable, one item per line. Leave a section's placeholder line in place until there is something real to put there; never invent content to fill it. Drop a section that stays empty.
 
-Everyone involved reads the file, in this order: Overview, Problem, Solutions, Open questions & test. Those are the four main tabs, written in plain everyday language for people. Everything else sits under one References group and is opened only when someone wants the facts behind a claim.
+Everyone involved reads the file, in this order: Overview, Problem, Questions, Solutions. Those are the tabs people read, written in plain everyday language. Questions comes before Solutions so people check the problem before they see a solution. Everything else sits under one References group, written precisely for the AI that designs the solution, and opened by people only when they want the facts behind a claim.
 
 | Tab | Where | Holds |
 | --- | --- | --- |
-| Overview | Main | What this is, Status, Progress, Next, In short |
+| Overview | Main | One-line summary, In short, reading order, Progress, Next |
 | Problem | Main | Status line, The problem, Why it matters, Goal, In scope, Out of scope, People, Must respect |
-| Solutions | Main | Suggested start, one table per choice, a short block per direction |
-| Open questions & test | Main | Questions numbered Q1, Q2… with who answers, first; then the test with people; Not explored |
+| Questions | Main | Questions about the problem for the people involved: status, who to ask, numbered questions with answers |
+| Solutions | Main | Proposed solution and its steps; ways to build each step, with questions to ask first |
 | References | Group | An index of the tabs below and what each holds |
-| Evidence | Under References | Facts, grouped and numbered E1, E2… |
-| Prior art | Under References | Other tools and products, grouped and numbered P1, P2… |
-| Decision log | Under References | Decisions people care about |
-| Notes for AI | Under References | Framing status, original input, labels, history, exact definitions, technical limits, frames set aside |
+| Evidence | Under References | Facts only, grouped by finding, each with a source and date |
+| Prior art | Under References | Other tools and products, with sources |
+| Decision log | Under References | Decisions about the problem and the solution |
+| Notes for AI | Under References | Framing status, original input, parts of the problem, where each Problem fact comes from, how the framing ran, exact definitions, technical limits, frames set aside |
 
 Use what the platform offers for the References group: sub-tabs in Claude Docs, toggles in Notion or Confluence, an appendix in Word or Google Docs, a references folder for Markdown.
 
-Each section of a main tab that rests on facts ends with one short line: "Backed by E1, E5 in Evidence", linked to that tab when the platform allows.
+The doc uses no codes of its own: no numbered IDs for facts, questions or solutions, no part labels. A reference names its target in words, such as an Evidence heading by name.
 
 If the problem is split in two, give each problem its own Problem and Solutions tabs.
 
@@ -29,44 +29,35 @@ Write any list of things to compare as a table, never as a paragraph.
 ```markdown
 # Framing: <a short name for the problem>
 
-<One or two plain sentences: what this is about.>
-
-Read in order: Overview, then Problem, then Solutions, then Open questions & test. References hold the facts behind them.
-
-## Status
-
-- **Problem:** <draft, or reviewed>
-  - <who confirmed it, one per line>
-  - <who has not reviewed it yet, or what reviewers said>
-- **Solutions:** <not started, or N directions proposed>
-  - <none chosen, or what was chosen and by whom>
-
-## Progress
-
-- [ ] Problem described
-- [ ] Problem reviewed by the people involved
-- [ ] Open questions answered
-- [ ] Starting direction chosen
-
-## Next
-
-- <who>: <what they should do, in plain words>
+<One line: the problem, in plain words.>
 
 ## In short
 
-- <at most three bullets. Not a copy of the Problem tab.>
+- <two to four bullets: the key facts, then the suggested start. Not a copy of the Problem tab.>
+
+Read in order: Overview, then Problem, then Questions, then Solutions. The References tab holds the facts behind them.
+
+## Progress
+
+- [ ] Problem described. <Confirmed by <name>, once they have.>
+- [ ] Problem reviewed by the people involved
+- [ ] Questions in Solutions answered
+- [ ] Starting solution chosen
+
+## Next
+
+- <person or group>: <what to do, and where their questions are, such as "answer your questions in the Solutions tab, under steps 2 to 4">
+  - <at most two urgent questions, written out>
 
 # Problem
 
-- **Status:** <draft, or reviewed>
-  - <who confirmed it, who has not reviewed it yet: one per line>
-- **Your part:** is this the right problem? Say what is wrong or missing.
+**<Draft.>** <Not yet reviewed by the team, or who has reviewed it.> Your part: is this the right problem? Say what is wrong or missing in the Questions tab.
 
 ## The problem
 
-<The statement from step 5. A short paragraph; if it names several missing things, list them as bullets.>
+<The concrete case first, with its numbers, such as the first customer's.>
 
-*Backed by <IDs> in Evidence*
+<Then the general statement: what must be true and isn't. If several things are missing, list them as bullets.>
 
 ## Why it matters
 
@@ -74,8 +65,10 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 
 ## Goal
 
-- <what should be true instead>
-- Measure: <rough is fine; today's number and the target>
+- <what must be true instead>
+- How we know it works:
+  - Today: <the number now, for the exact studio or unit>
+  - Goal: <the target>
 
 ## In scope
 
@@ -87,95 +80,102 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 
 ## People
 
+- Decides: <name, only if known>
 - <who uses it, who is affected, who loses: one group per bullet>
-- Decides: <name, only if known; the only place the decider is named>
 
 ## Must respect
 
-- <deadlines, acceptable downtime, rules, budgets: one per bullet. Not how to meet them.>
+- <deadlines, acceptable downtime, rules, budgets: one per bullet. What must be true, never how.>
+- <a "how" only if the decider asked for it, saying who asked>
+
+*Every fact here comes from the Evidence tab.*
+
+# Questions
+
+Questions about the problem, for the people involved. Questions about how to build it are in Solutions, under each step.
+
+**Status:** <not started, prepared, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the tab.>
+
+## Who to ask
+
+- <one person or group per bullet, described so anyone knows who is meant; "name not known yet" if so>
+
+## Questions
+
+Write your name and answer under each one.
+
+1. <a short question that checks the statement, the goal, the scope or a limit, without mentioning any solution>
+    - Answers:
 
 # Solutions
 
-<One line: how many directions, whether any is chosen.>
+The proposed solution first, then the ways to build it. Nothing is chosen yet.
 
-## Suggested start (AI's view, not chosen)
+## Proposed solution
 
-- **Start with:** <directions, one sub-bullet each with why>
-- **Check first:** <the open question that could change it>
-- **Chosen:** <the person's choice, or "none yet">
+<What it does, in one or two sentences.>
 
-## <1. The first choice, as a question>
+It has <N> steps:
 
-| # | Direction | In a few words | Main risk |
-| --- | --- | --- | --- |
-| D1 | <short name> | <what it is> | <the biggest downside> |
-| D2 | <…> | <…> | <…> |
+1. <step>
 
-### D1. <short name>
-
-- **What:** <one line>
 - **Good:** <one or two lines>
-- **Bad:** <one or two lines, including any limit it breaks>
-- **Answer first:** <open questions it depends on, by ID, or "none">
+- **Cost:** <one or two lines>
 
-*Backed by <IDs>*
+### Other solutions considered
 
-<One block per direction, in the same order as the table. One section per choice.>
+- **<a real alternative, seen in other tools or with a clear reason>** <why it was set aside, or what would bring it back>
 
-# Open questions & test
+## Ways to build it
 
-<One line: what still needs answering, and by whom.>
+### 1. <step>
 
-## Open questions
+- **<way>** ← *recommended*
+  - How: <one line>
+  - Good: <one line>
+  - Risk: <one line; say so when every other tool does it differently>
+  - Ask first: <what Evidence and Prior art already say, then only what is left, with one real example>
+    - Who answers: <role>
+    - Answer:
+- **<another way>**
+  - How: <…>
+  - Good: <…>
+  - Risk: <…>
+- Ask first: <a question that decides between the ways of this step>
+  - Who answers: <role>
+  - Answer:
 
-### Q1. <the question, in plain words>
+Facts: Evidence tab, "<heading name>".
 
-- Who answers: <name or role>
-- It decides: <the decision or direction that depends on it>
-- Answer:
-
-<One block per question, not a table: answers need room.>
-
-## Test with people
-
-- **Status:** <not started, in progress, done, or skipped by the person's decision. If skipped, this one line with the reason replaces the rest of the section.>
-- **Who to ask:**
-  - <one person or group per bullet, described so anyone knows who is meant; "name not known yet" if so>
-- **Questions** (write your name and answer under each one):
-  1. <a few short questions that don't mention any solution>
-      - Answers:
-
-## Not explored
-
-<Topics the person chose not to go into, with their reason. Not asked about again in this session.>
-
-- <…>
+<One section per step, in the same order as the list of steps.>
 
 # References
 
-<One line: open these only for the facts behind a claim. A table: tab, what it holds, how it is cited.>
+<One line: open these only for the facts behind a claim. A table: tab and what it holds.>
 
 # Evidence
 
-<One line: what this tab holds and that groups are cited by ID.>
+<One line: facts only, from data, docs and meetings. Decisions are in the Decision log; other tools are in Prior art.>
 
-## E1. <group title>
+## <group title, in words>
 
-<takeaway in one plain line>
+<The finding, in one sentence.>
 
-- <fact> (<source>)
+- <fact: what it counts, in which studio or unit, and when> (<source>, <date>)
 
 ## Assumptions not yet checked
 
-- <assumption>
+- <assumption. When it gets answered, move it into a group above as a fact.>
 
 # Prior art
 
-## P1. <group title>
+## <group title, in words>
 
-<Who else faced this and what already exists, with sources. Evidence only, not a chosen solution.>
+<The finding, in one sentence. Then who else faced this and what already exists, with sources. Evidence only, not a chosen solution. Facts about the customer's own systems go in Evidence.>
 
 # Decision log
+
+Decisions about the problem and the solution, in date order. A superseded decision stays; the new one is added below it.
 
 | Date | Decision | Who | Why |
 | --- | --- | --- | --- |
@@ -187,10 +187,10 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 
 ## Framing status
 
-- **Step:** <0 to 7, or done>
-- **Kind of problem:** <one of the ten kinds; note if it changed>
+- **Step:** <the step's name, such as "Suggest a solution", or done>
+- **Kind of problem:** <the kind, in words, such as "a need with no good solution yet"; note if it changed>
 - **Depth:** <light, standard or deep, and why>
-- **Waiting for:** <missing facts, a test with people, a review, or nothing. Step is done only when this is nothing.>
+- **Waiting for:** <missing facts, a test with people, a review, or nothing. Done only when this is nothing.>
 - **Problem status:** <draft, confirmed by the framer, or reviewed by the people involved>
 
 ## Original input
@@ -198,11 +198,9 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 - **Input:** "<the person's words, exactly>"
 - **Built in at the start:** <chosen solution, assumed cause, whose view>
 
-## Parts and labels
+## Parts of the problem
 
-| Label | Part | Status |
-| --- | --- | --- |
-| <A> | <part of the problem> | <in, out, separate> |
+- <part of the problem, by name>: <in, out, or handled separately>
 
 ## How the frame changed
 
@@ -212,17 +210,30 @@ Read in order: Overview, then Problem, then Solutions, then Open questions & tes
 | --- | --- | --- |
 | <YYYY-MM-DD> | <one change per row> | <short reason> |
 
+## Where each Problem fact comes from
+
+- <the fact as the Problem tab states it> → Evidence: "<heading name>"
+- Open: <a Problem fact with no source yet>
+
+## How the framing ran
+
+Decisions about the framing process: depth, kind, file format, data access, how the doc is laid out, when to run the review.
+
+| Date | Decision | Who | Why |
+| --- | --- | --- | --- |
+| <YYYY-MM-DD> | <what was decided> | <person or AI> | <reason> |
+
 ## Exact definitions
 
-- <the success measure and any term stated precisely: entity names, IDs, formulas>
+- <the success measure and any term stated precisely: entity names, field IDs, formulas>
 
 ## Technical limits
 
-- <owners, systems, volumes, data shapes: one per bullet, with sources>
+- <owners, systems, volumes, data shapes: one per bullet, with source and date>
 
-## Process decisions
+## Not explored
 
-- <how the framing ran: depth, file format, research choices>
+- <a topic the person chose not to go into, with their reason. Only if there is one.>
 
 ## Frames set aside
 

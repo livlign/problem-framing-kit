@@ -1,25 +1,28 @@
 # problem-framing-kit
 
-Frames the real problem behind an idea, task, complaint or planned change before any solution work starts, then suggests a few solution directions to start from.
+Frames the real problem behind an idea, task, complaint or planned change before any solution work starts, then suggests a solution and the ways to build it, so there is somewhere to start.
 
-AI agents tend to start solving the moment a request arrives, often with a solution already built into the request. This kit makes the agent stop and work out, with you, whether the problem is real, what kind of problem it is, and whether there is a better problem to solve. Once the problem is framed, it suggests several very different solution directions so the work isn't blocked. Choosing one and designing it is the next stage.
+AI agents tend to start solving the moment a request arrives, often with a solution already built into the request. This kit makes the agent stop and work out, with you, whether the problem is real, what kind of problem it is, and whether there is a better problem to solve. Once the problem is framed, it proposes a solution, broken into steps, with the ways to build each step, so the work isn't blocked. Choosing and designing it is the next stage.
 
 ## What you get
 
-One result file that everyone involved reads, and that holds everything the next stage of development needs. Four main tabs, in reading order, written in plain language for people:
+One result file that everyone involved reads, and that holds everything the next stage of development needs. Four tabs for people, in reading order, in plain language:
 
-1. **Overview:** what this is about, status, progress, and the next step with a name on each ask.
-2. **Problem:** the problem statement, why it matters, the goal, scope, people and limits. Readers check it is right.
-3. **Solutions:** a suggested start, then several very different directions with trade-offs. None is chosen for you.
-4. **Open questions & test:** what still needs answering and by whom, with space to write the answers in the doc.
+1. **Overview:** a one-line summary, the key facts, progress, and what each person should do next.
+2. **Problem:** what must be true and why: the problem, the goal, scope, people and limits. Readers check it is right.
+3. **Questions:** questions that check the problem with the people involved, with space for their answers.
+4. **Solutions:** the proposed solution as steps, the ways to build each step with one recommended, and the questions to answer before choosing.
 
-Everything else sits under one **References** group, opened only when someone wants the facts behind a claim:
+Questions comes before Solutions, so people check the problem before they see a solution.
 
-- **Evidence** and **Prior art**, numbered (E1, P1…) so the main tabs can cite them.
-- **Decision log:** every decision, who made it, and why, written the moment it was made.
-- **Notes for AI:** the exact detail the AI agent that designs the solution needs.
+Then a **References** group, written precisely for the AI that designs the solution:
 
-In Claude, the file is a doc you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word, and uses toggles, an appendix or a references folder for the References group. Status is honest: it says who agreed, never just "agreed".
+- **Evidence:** facts only, each with a source and date.
+- **Prior art:** how other tools and products handle the same thing.
+- **Decision log:** decisions about the problem and the solution, in date order.
+- **Notes for AI:** the exact detail the next stage needs, including where each fact in the Problem tab comes from and how the framing ran.
+
+In Claude, the file is a doc you can watch, edit and comment on. Elsewhere, the kit asks once which format you want, such as Markdown or Word, and uses toggles, an appendix or a references folder for the References group.
 
 ## How it works
 
@@ -29,7 +32,7 @@ In Claude, the file is a doc you can watch, edit and comment on. Elsewhere, the 
 4. **Look around:** who has it, who doesn't, and why.
 5. **State the problem** in plain words, with its limits.
 6. **Test with people:** the kit prepares the questions; you ask them. For your team's own problems, that means the team and the people who decide, not customers.
-7. **Suggest solution directions:** several very different ones in a table, with trade-offs, so the next stage has somewhere to start.
+7. **Suggest a solution:** its steps, the ways to build each one with trade-offs, and the questions to answer first, so the next stage has somewhere to start.
 
 It asks one question at a time, in plain words, and researches before asking. When you don't know something or don't want to go into it, it records that and stops asking in that direction. It decides alone only when it is confident and a mistake is cheap, and it logs why.
 
